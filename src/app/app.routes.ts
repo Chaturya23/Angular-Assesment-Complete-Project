@@ -13,6 +13,8 @@ import { ProductsComponent } from './products/products.component';
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'products', component: ProductsComponent }
+  { path: 'products', component: ProductsComponent },
+  
+  
 //   { path: 'gallery', component: GalleryComponent }
 ];
