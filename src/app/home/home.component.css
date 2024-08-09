@@ -1,3 +1,4 @@
+
 .home-container {
   display: flex;
 }
@@ -30,36 +31,53 @@
 }
 
 .side-menu ul li a:hover {
-  color: #007bff; /* Change to your desired hover color */
+  color: #007bff; 
 }
 
 .main-content {
   flex: 1;
-  padding: 1rem;
-}
-
-
-.main-content {
   padding: 2rem;
 }
 
 .image {
   display: flex;
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center;     /* Centers the image vertically */
-  padding: 1rem;           /* Adds padding around the container */
-  background-color: #f4f4f4; /* Background color for the container */
-  border-radius: 0.5rem;   /* Rounds the corners of the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  justify-content: center; 
+  align-items: center;     
+  padding: 1rem;           
+  background-color: #f4f4f4; 
+  border-radius: 0.5rem;   
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .image img {
-  max-width: 15%;        /* Ensures the image doesn't exceed container width */
-  height: auto;           /* Maintains the aspect ratio */
-  border-radius: 0.5rem;  /* Rounds the corners of the image */
-  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  max-width: 15%;        
+  height: auto;           
+  border-radius: 0.5rem;  
+  transition: transform 0.3s ease-in-out; 
 }
 
 .image img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05); 
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; 
+  }
+
+  .side-menu {
+    width: 100%; 
+    border-right: none; 
+    border-bottom: 1px solid #ddd; 
+  }
+
+  .main-content {
+    padding: 1rem; 
+  }
+
+  .image img {
+    max-width: 100%; 
+    height: auto;    
+  }
 }

@@ -1,10 +1,11 @@
 import { TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [AppComponent, RouterTestingModule],  // Add RouterTestingModule here
     }).compileComponents();
   });
 
@@ -14,16 +15,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'website' title`, () => {
+  it(`should have as title 'website app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('website');
+    expect(app.title).toEqual('website app');
   });
 
-  it('should render title', () => {
+   it('should render title in a span tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, website');
+    console.log(compiled.innerHTML);  // Log the HTML to check what's rendered
+    const spanElement = compiled.querySelector('span');
+    expect(spanElement?.textContent).toContain('website app');
   });
 });
