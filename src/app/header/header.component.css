@@ -1,0 +1,21 @@
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Default color */
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(236, 172, 87);/* Change to the desired hover color */
+}

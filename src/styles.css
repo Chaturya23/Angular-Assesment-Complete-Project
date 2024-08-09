@@ -1,0 +1,83 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:white;
+  background-color:thistle;
+  padding: 1rem;
+}
+body {
+  background: linear-gradient(to right, thistle, #feb47b); 
+}
+/* body {
+  background-image: url('assets/bgimage.jpg'), url('assets/imag.jpg');
+  background-size: 250px 250px, 350px 350px; /* Set size for each image */
+  /* background-position: left, right ; Set position for each image */
+  /* background-repeat: no-repeat, no-repeat; Prevent images from repeating */
+
+
+
+
+
+
+nav .logo a {
+  color:rgb(192, 113, 10);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: black; /* Default color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+  color:rgb(236, 172, 87); /* Change to the desired hover color */
+}
+
+
+/* Footer Styling */
+footer {
+  background:thistle;;
+  color:black;
+  text-align: center;
+  padding: 0rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  /* background: url('path_to_hero_image.jpg') no-repeat center center/cover; */
+  color: rgb(16, 15, 15);
+  padding: 5rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+.hero .btn {
+  background: #f90;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+ 
